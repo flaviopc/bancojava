@@ -27,6 +27,7 @@ public class App {
         contas.add(cp2);
         Banco banco = new Banco("Banco dos Famosos", contas);
         banco.imprimirContas();
+        banco.imprimirClientes();
 
     }
 }

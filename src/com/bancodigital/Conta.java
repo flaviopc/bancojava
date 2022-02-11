@@ -21,6 +21,10 @@ public abstract class Conta implements IConta {
         return agencia;
     }
 
+    public String getCliente() {
+        return cliente.getNome();
+    }
+
     public int getNumero() {
         return numero;
     }
