@@ -21,6 +21,10 @@ public abstract class Conta implements IConta {
         return agencia;
     }
 
+    public String getCliente() {
+        return cliente.getNome();
+    }
+
     public int getNumero() {
         return numero;
     }
@@ -85,10 +89,6 @@ public abstract class Conta implements IConta {
         System.out.println("Dados da conta de destino:");
         System.out.println("Titular: " + contaDestino.cliente.getNome());
         System.out.println("Agencia: " + contaDestino.agencia + " Conta: " + contaDestino.numero);
-    }
-
-    public String getCliente() {
-        return this.cliente.getNome();
     }
 
 }
