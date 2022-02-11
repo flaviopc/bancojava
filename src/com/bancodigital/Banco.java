@@ -42,7 +42,7 @@ public class Banco {
         System.out.println("Lista de clientes:");
         System.out.println("------------------------------------");
         for (Conta conta : contas) {
-            conta.getCliente();
+            System.out.println(conta.getCliente());
             System.out.println("------------------------------------");
         }
     }
