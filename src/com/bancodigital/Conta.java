@@ -87,4 +87,8 @@ public abstract class Conta implements IConta {
         System.out.println("Agencia: " + contaDestino.agencia + " Conta: " + contaDestino.numero);
     }
 
+    public String getCliente() {
+        return this.cliente.getNome();
+    }
+
 }

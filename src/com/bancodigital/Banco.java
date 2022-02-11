@@ -35,4 +35,15 @@ public class Banco {
             System.out.println("------------------------------------");
         }
     }
+
+    public void imprimirClientes() {
+        System.out.println("============ " + this.nome + " ============");
+        System.out.println("Data: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
+        System.out.println("Lista de clientes:");
+        System.out.println("------------------------------------");
+        for (Conta conta : contas) {
+            conta.getCliente();
+            System.out.println("------------------------------------");
+        }
+    }
 }
